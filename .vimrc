@@ -14,9 +14,11 @@ Plugin 'gmarik/vundle'
 " utilities
 Plugin 'kien/ctrlp.vim' " fuzzy find files
 Plugin 'scrooloose/nerdtree' " file drawer, open with :NERDTreeToggle
+Plugin 'Xuyuanp/nerdtree-git-plugin'  " git support for NERDTree
 Plugin 'benmills/vimux'
 Plugin 'tpope/vim-fugitive' " the ultimate git helper
 Plugin 'tpope/vim-commentary' " comment/uncomment lines with gcc or gc in visual mode
+Plugin 'Yggdroot/indentLine'   " indent of lines
 Plugin 'vim-syntastic/syntastic'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'majutsushi/tagbar'
@@ -165,6 +167,7 @@ let g:ctrlp_custom_ignore = {
 
 " search the nearest ancestor that contains .git, .hg, .svn
 let g:ctrlp_working_path_mode = 2
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 " setup for ycm
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/examples/.ycm_extra_conf.py'
@@ -202,4 +205,4 @@ let g:cpp_experimental_simple_template_highlight = 1
 let g:cpp_concepts_highlight = 1
 let g:cpp_no_function_highlight = 1
 
-
+highlight Normal guibg=black guifg=white
